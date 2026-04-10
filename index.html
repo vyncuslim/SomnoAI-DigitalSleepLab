@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WM4RE66ER"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1WM4RE66ER');
+    </script>
+    <script>
+      // Prevent React crashes from Google Translate modifying the DOM
+      if (typeof Node === 'function' && Node.prototype) {
+        const originalRemoveChild = Node.prototype.removeChild;
+        Node.prototype.removeChild = function(child) {
+          if (child.parentNode !== this) {
+            if (console) {
+              console.warn('Cannot remove a child from a different parent', child, this);
+            }
+            return child;
+          }
+          return originalRemoveChild.apply(this, arguments);
+        };
+
+        const originalInsertBefore = Node.prototype.insertBefore;
+        Node.prototype.insertBefore = function(newNode, referenceNode) {
+          if (referenceNode && referenceNode.parentNode !== this) {
+            if (console) {
+              console.warn('Cannot insert before a reference node from a different parent', referenceNode, this);
+            }
+            return newNode;
+          }
+          return originalInsertBefore.apply(this, arguments);
+        };
+      }
+    </script>
+    <!-- Developed by Vyncus Lim -->
+    <meta name="author" content="Vyncus Lim">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo_512.png" />
+    <link rel="alternate" type="application/rss+xml" title="SomnoAI Digital Sleep Lab News RSS Feed" href="https://sleepsomno.com/rss.xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SomnoAI Digital Sleep Lab - Advanced AI-powered sleep analysis, personalized coaching, and comprehensive sleep tracking. Improve your sleep quality, understand your sleep cycles, and get actionable insights based on scientific data. Join our digital sleep clinic today for better rest and recovery." />
+    <title>SomnoAI Digital Sleep Lab</title>
+    <script
+      src="https://app.livechatai.com/embed.js"
+      data-id="cmm94ogp70001ju044o63bgyk"
+      async defer>
+    </script>
+  </head>
+  <body>
+    <div id="seo-content" style="opacity: 0; position: absolute; z-index: -1; pointer-events: none;">
+      <h1>SomnoAI Digital Sleep Lab</h1>
+      <p>Welcome to SomnoAI Digital Sleep Lab. Our platform provides advanced AI-powered sleep analysis, personalized sleep coaching, and comprehensive tracking to help you improve your sleep quality.</p>
+      <p>Features include:</p>
+      <ul>
+        <li>AI Sleep Analysis: Get detailed insights into your sleep cycles, deep sleep, REM sleep, and heart rate variability.</li>
+        <li>Personalized Coaching: Receive actionable advice tailored to your unique sleep patterns.</li>
+        <li>Sleep Tracking: Monitor your progress over time with our intuitive dashboard.</li>
+        <li>Digital Sleep Clinic: Access professional resources and connect with sleep experts.</li>
+      </ul>
+      <p>We combine cutting-edge artificial intelligence with proven sleep science to help you achieve better rest, recovery, and overall health. Whether you struggle with insomnia, sleep apnea symptoms, or just want to optimize your daily energy levels, SomnoAI Digital Sleep Lab is your personal digital sleep clinic.</p>
+      <p>Join thousands of users who have transformed their sleep habits with our data-driven approach. Track your sleep stages, understand your circadian rhythm, and wake up feeling refreshed every morning.</p>
+    </div>
+    <div id="root">
+      <div style="padding: 20px; font-family: sans-serif; color: #333;">
+        <h2>Loading SomnoAI Digital Sleep Lab...</h2>
+        <p>If you are seeing this message, please ensure JavaScript is enabled in your browser.</p>
+        <p>SomnoAI Digital Sleep Lab is a comprehensive digital sleep clinic offering AI-powered sleep analysis, personalized coaching, and detailed sleep tracking to help you achieve better rest and recovery.</p>
+        <p>Our platform analyzes your sleep cycles, deep sleep, REM sleep, and heart rate variability to provide actionable insights tailored to your unique sleep patterns.</p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

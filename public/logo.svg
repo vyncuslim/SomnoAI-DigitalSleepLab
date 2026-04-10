@@ -1,0 +1,41 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="128" fill="#0A0A0B"/>
+  
+  <!-- Outer Swirls -->
+  <path d="M400 256C400 335.529 335.529 400 256 400C176.471 400 112 335.529 112 256C112 176.471 176.471 112 256 112C335.529 112 400 176.471 400 256Z" fill="url(#paint0_angular_logo)" fill-opacity="0.8"/>
+  
+  <!-- Planet -->
+  <circle cx="256" cy="256" r="64" fill="url(#paint1_radial_logo)"/>
+  
+  <!-- Planet Ring -->
+  <ellipse cx="256" cy="256" rx="100" ry="20" transform="rotate(-15 256 256)" stroke="white" stroke-width="4" stroke-opacity="0.6"/>
+  
+  <!-- Stars -->
+  <circle cx="150" cy="150" r="4" fill="white" fill-opacity="0.8">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="380" cy="120" r="3" fill="#60A5FA" fill-opacity="0.8">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="420" cy="350" r="5" fill="#F472B6" fill-opacity="0.8">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="120" cy="400" r="3" fill="#818CF8" fill-opacity="0.8">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="200" cy="100" r="2" fill="white" fill-opacity="0.6"/>
+  <circle cx="450" cy="200" r="2" fill="white" fill-opacity="0.6"/>
+
+  <defs>
+    <radialGradient id="paint0_angular_logo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256 256) rotate(90) scale(144)">
+      <stop offset="0" stop-color="#3B82F6"/>
+      <stop offset="0.33" stop-color="#8B5CF6"/>
+      <stop offset="0.66" stop-color="#EC4899"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </radialGradient>
+    <radialGradient id="paint1_radial_logo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256 256) rotate(90) scale(64)">
+      <stop offset="0" stop-color="#4F46E5"/>
+      <stop offset="1" stop-color="#1E1B4B"/>
+    </radialGradient>
+  </defs>
+</svg>

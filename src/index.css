@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #050505;
+  --color-foreground: #ffffff;
+  --color-primary: #6366F1;
+  --color-secondary: #1f2937;
+  --font-sans: 'Inter', sans-serif;
+  --spacing-container: 1rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans antialiased text-sm md:text-base;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply tracking-tight;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-8 md:py-12;
+  }
+  
+  .compact-card {
+    @apply p-3 md:p-4 rounded-lg border border-white/10 bg-white/5;
+  }
+}
