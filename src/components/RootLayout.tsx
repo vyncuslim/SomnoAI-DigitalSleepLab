@@ -31,14 +31,14 @@ const RootLayout: React.FC<RootLayoutProps> = ({
     <div className="min-h-screen bg-[#01040a] text-slate-200 flex flex-col">
       {showBanner && (
         <a 
-          href="https://docs.google.com/forms/d/e/1FAIpQLSf1LB5wOAUW8PioG5HiUW8MYC_a9_Rp4Eb9wjYpaQM2U9SJ4A/viewform"
+          href="/security-challenge-2026"
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed top-0 left-0 right-0 h-8 bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 text-white text-[10px] font-black uppercase tracking-[0.2em] flex items-center justify-center z-[9999] shadow-xl hover:brightness-110 transition-all"
+          className="fixed top-0 left-0 right-0 min-h-8 bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 text-white text-[10px] font-bold tracking-wider flex items-center justify-center z-[9999] shadow-xl hover:brightness-110 transition-all px-12 py-1 text-center"
         >
           <div className="flex items-center gap-2">
             <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
-            <span>Join SomnoAI Digital Sleep Lab Early Access — Limited Beta Access</span>
+            <span>{lang === 'zh' ? 'Vynalth AI Security Challenge 2026 · Gen.xyz 赞助 20 个首年免费 .xyz 域名 · 了解更多' : 'Vynalth AI Security Challenge 2026 · 20 free first-year .xyz domains sponsored by Gen.xyz · Learn more'}</span>
           </div>
           <div 
             onClick={(e) => {
