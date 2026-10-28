@@ -81,6 +81,7 @@ const VerifyEmail = lazyWithRetry(() => import('./pages/VerifyEmail').then(modul
 const AISleepCoach = lazyWithRetry(() => import('./components/AISleepCoach').then(module => ({ default: module.AISleepCoach })));
 const AIHub = lazyWithRetry(() => import('./pages/AIHub').then(module => ({ default: module.AIHub })));
 const BugBounty = lazyWithRetry(() => import('./pages/security/BugBounty').then(module => ({ default: module.BugBounty })));
+const SecurityChallenge2026 = lazyWithRetry(() => import('./pages/SecurityChallenge2026').then(module => ({ default: module.SecurityChallenge2026 })));
 const HallOfFame = lazyWithRetry(() => import('./pages/security/HallOfFame').then(module => ({ default: module.HallOfFame })));
 const VerifyCertificate = lazyWithRetry(() => import('./pages/security/VerifyCertificate').then(module => ({ default: module.VerifyCertificate })));
 const ResearcherProfile = lazyWithRetry(() => import('./pages/security/ResearcherProfile').then(module => ({ default: module.ResearcherProfile })));
@@ -246,6 +247,10 @@ const AppRoutes: React.FC<AppRoutesProps> = ({
         </ProtectedRoute>
       } />
       
+      {/* Security Challenge 2026 — preview, no testing authorization */}
+      <Route path="security-challenge-2026" element={<SecurityChallenge2026 lang={lang} />} />
+      <Route path="security/challenge-2026" element={<Navigate to="/security-challenge-2026" replace />} />
+      
       {/* Security Recognition */}
       <Route path="security/bug-bounty" element={<BugBounty />} />
       <Route path="security/hall-of-fame" element={<HallOfFame />} />
@@ -401,7 +406,9 @@ const AppContent = () => {
   };
 
   const activeView = getActiveView();
-  const canonicalUrl = `https://sleepsomno.com${location.pathname}`;
+  const canonicalUrl = location.pathname.includes('security-challenge-2026')
+    ? 'https://vynalthai.com/security-challenge-2026'
+    : `https://sleepsomno.com${location.pathname}`;
 
   // Paths that should NOT be indexed by search engines
   const sensitivePaths = [
