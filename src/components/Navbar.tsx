@@ -50,6 +50,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     { label: t.nav?.science || 'Science', view: 'science', icon: FlaskConical },
     { label: t.nav?.news || 'News', view: 'news', icon: Newspaper },
     { label: t.nav?.faq || 'FAQ', view: 'faq', icon: HelpCircle },
+    { label: isZh ? '安全挑战' : 'Security Challenge', view: 'security-challenge-2026', icon: FlaskConical },
     { label: t.nav?.project || 'Project', view: 'about', icon: Info },
     { label: isZh ? '联系' : 'Contact', view: 'contact', icon: Mail },
     { label: isZh ? '支持' : 'Support', view: 'support', icon: LifeBuoy },
@@ -69,6 +70,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     { id: 'diary', icon: BookOpen, label: isZh ? '日志' : 'Log' },
     { id: 'contact', icon: Mail, label: isZh ? '联系' : 'Contact' },
     { id: 'support', icon: LifeBuoy, label: isZh ? '支持' : 'Support' },
+    { id: 'security-challenge-2026', icon: FlaskConical, label: isZh ? '安全挑战' : 'Security Challenge' },
   ];
 
   const links = isAuthenticated ? authLinks : guestLinks;
