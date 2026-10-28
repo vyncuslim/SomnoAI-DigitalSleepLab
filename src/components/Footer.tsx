@@ -24,6 +24,7 @@ const Footer: React.FC<FooterProps> = ({ lang = 'en' }) => {
     { name: 'STATUS', path: '/status' },
     { name: 'CONTACT', path: '/contact' },
     { name: 'SUPPORT', path: '/support' },
+    { name: lang === 'zh' ? '安全挑战 2026' : 'SECURITY CHALLENGE 2026', path: '/security-challenge-2026' },
     { name: 'HALL OF FAME', path: '/security/hall-of-fame' },
     { name: 'SIGN IN', path: '/auth/login' }
   ];
